@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="732.0" style="-fx-background-color: #e0feff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd7.FXMLDocumentController">
+    <children>
+      <AnchorPane layoutX="8.0" layoutY="94.0" prefHeight="241.0" prefWidth="341.0" style="-fx-background-color: #a8ddd0;">
+         <children>
+            <Label layoutX="14.0" layoutY="26.0" prefHeight="25.0" prefWidth="92.0" text="id:" />
+            <Label layoutX="14.0" layoutY="66.0" prefHeight="25.0" prefWidth="84.0" text="Nom:" />
+            <Label layoutX="11.0" layoutY="101.0" prefHeight="25.0" prefWidth="84.0" text="prenom:" />
+            <Label layoutX="11.0" layoutY="131.0" prefHeight="25.0" prefWidth="84.0" text=" DDN:" />
+            <Label layoutX="11.0" layoutY="162.0" prefHeight="25.0" prefWidth="69.0" text="promo:" />
+            <TextField fx:id="fieldId" layoutX="103.0" layoutY="26.0" />
+            <TextField fx:id="fieldNom" layoutX="103.0" layoutY="66.0" />
+            <TextField fx:id="fieldPrenom" layoutX="103.0" layoutY="101.0" />
+            <TextField fx:id="fieldDate" layoutX="103.0" layoutY="131.0" />
+            <TextField fx:id="fieldPromo" layoutX="103.0" layoutY="162.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="229.0" layoutY="343.0" mnemonicParsing="false" onAction="#onInsert" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #a8ddd0;" text="Inscrir" />
+      <Label layoutX="39.0" layoutY="67.0" prefHeight="17.0" prefWidth="234.0" text="Si  vous n'etes pas inscris ,inscrivez vous" />
+      <TableView fx:id="tableV" layoutX="388.0" layoutY="62.0" prefHeight="328.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="idTab" prefWidth="52.0" text="id" />
+          <TableColumn fx:id="namet" prefWidth="58.0" text="nom" />
+            <TableColumn fx:id="prenamet" prefWidth="61.0" text="prenom" />
+            <TableColumn fx:id="ddat" prefWidth="85.0" text="date dd" />
+            <TableColumn fx:id="promot" prefWidth="73.0" text="promo" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="388.0" layoutY="23.0" onKeyPressed="#searchA" prefHeight="25.0" prefWidth="330.0" />
+    </children>
+</AnchorPane>

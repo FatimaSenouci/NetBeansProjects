@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="728.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.Suite1Controller">
+   <children>
+      <JFXButton layoutX="220.0" layoutY="174.0" onAction="#BtnListe" prefHeight="45.0" prefWidth="288.0" style="-fx-background-color: #00BFFF;" text="List of Tracks" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="21.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="flightid" layoutX="43.0" layoutY="76.0" prefHeight="42.0" prefWidth="222.0" style="-fx-background-color: #E70739;">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="planeid" layoutX="468.0" layoutY="76.0" prefHeight="42.0" prefWidth="222.0" style="-fx-background-color: #677E52;">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="313.0" layoutY="39.0" prefHeight="29.0" prefWidth="103.0" text="     Date" textFill="#002f2f">
+         <font>
+            <Font name="Arial Narrow Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="39.0" prefHeight="29.0" prefWidth="170.0" text="   Flight Number" textFill="#002f2f">
+         <font>
+            <Font name="Arial Narrow Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="494.0" layoutY="39.0" prefHeight="29.0" prefWidth="170.0" text="   Plane Number" textFill="#002f2f">
+         <font>
+            <Font name="Arial Narrow Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="14.0" layoutY="14.0" onMouseClicked="#retour1" prefHeight="18.0" prefWidth="40.0" style="-fx-background-radius: 25;" styleClass="btn-snackbar-touast" stylesheets="@suite1.css" text="&lt; - -" />
+      <TableView fx:id="tableviewsuitid" layoutX="140.0" layoutY="234.0" onMouseClicked="#displaySelected" prefHeight="210.0" prefWidth="477.0" style="-fx-background-color: #91BACF;">
+        <columns>
+          <TableColumn fx:id="trackid2" prefWidth="164.0" text="Track Id" />
+          <TableColumn fx:id="type2id" prefWidth="161.0" text="Type" />
+            <TableColumn fx:id="freeid" prefWidth="75.0" text="Free" />
+            <TableColumn fx:id="occupiedid" prefWidth="75.0" text="Occupied" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="97.0" fitWidth="145.0" layoutX="292.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fbe7f5eb5e32eb6d4f1db634687fd6b4.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate2" layoutX="313.0" layoutY="87.0" prefHeight="57.0" prefWidth="103.0" style="-fx-background-color: #ffff;" textFill="#c96f6f">
+         <font>
+            <Font name="Arial Narrow Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="593.0" layoutY="451.0" onAction="#toDisplay" onMouseClicked="#Go22" prefHeight="45.0" prefWidth="97.0" style="-fx-background-color: #00BFFF;" text="next" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

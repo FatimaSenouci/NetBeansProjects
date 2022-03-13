@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.77" prefHeight="400.0" prefWidth="750.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="genie_logiciel.DebutController">
+    <stylesheets>
+        <URL value="@../Documents/NetBeansProjects/Genie_logiciel/src/vendeur/debut.css" />
+      <URL value="@vendeur.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="52.0" prefHeight="300.0" prefWidth="304.0" style="-fx-background-color: #A87F7F; -fx-border-color: #000000;">
+         <children>
+            <Label layoutX="2.0" layoutY="40.0" prefHeight="26.0" prefWidth="56.0" text="  Type :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="2.0" layoutY="117.0" prefHeight="26.0" prefWidth="56.0" text=" Prix :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="2.0" layoutY="156.0" prefHeight="26.0" prefWidth="56.0" text="Nombre :" />
+            <TextField fx:id="idType" layoutX="79.0" layoutY="40.0" prefHeight="26.0" prefWidth="206.0" />
+            <Button layoutX="211.0" layoutY="222.0" mnemonicParsing="false" onAction="#Oninsert" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #000000; -fx-background-radius: 200;" text="inserer" textFill="WHITE" />
+            <TextField fx:id="idPrix" layoutX="79.0" layoutY="117.0" prefHeight="26.0" prefWidth="206.0" />
+            <TextField fx:id="idNombre" layoutX="79.0" layoutY="156.0" prefHeight="26.0" prefWidth="206.0" />
+            <TextField fx:id="idMarque" layoutX="79.0" layoutY="78.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="2.0" layoutY="78.0" prefHeight="26.0" prefWidth="56.0" text="Marque :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button layoutX="14.0" layoutY="222.0" mnemonicParsing="false" onAction="#Oninsert" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #000000; -fx-background-radius: 200;" text="modifier" textFill="#fffafa" />
+            <Button layoutX="115.0" layoutY="222.0" mnemonicParsing="false" onAction="#Oninsert" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #000000; -fx-background-radius: 200;" text="suprimer" textFill="#fffefe" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="idTable" layoutX="328.0" layoutY="39.0" opacity="0.82" prefHeight="259.0" prefWidth="409.0">
+        <columns>
+          <TableColumn fx:id="Typetab" prefWidth="96.0" text="Type" />
+          <TableColumn fx:id="Marquetab" prefWidth="75.0" text="Marque" />
+            <TableColumn fx:id="Prixtab" prefWidth="79.0" text="Prix_U" />
+            <TableColumn fx:id="Nombretab" prefWidth="72.0" text="Nombre" />
+            <TableColumn prefWidth="86.0" text="Prix_Total" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="328.0" layoutY="298.0" opacity="0.89" prefHeight="60.0" prefWidth="409.0" style="-fx-background-color: #f8f2f2;">
+         <children>
+            <JFXTextField layoutX="49.0" layoutY="19.0" prefHeight="25.0" prefWidth="197.0" />
+            <Button layoutX="268.0" layoutY="9.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="131.0" style="-fx-background-radius: 400;" text="Somme">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

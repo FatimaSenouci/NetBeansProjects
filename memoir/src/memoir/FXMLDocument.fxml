@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" cache="true" prefHeight="501.0" prefWidth="750.0" style="-fx-border-color: #000000; -fx-background-color: #3F042B;" styleClass="mainFxmlClass" stylesheets="@memoir.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memoir.FXMLDocumentController">
+    <children>
+      <JFXButton layoutX="284.0" layoutY="451.0" onMouseClicked="#HelpLogin" opacity="0.8" prefHeight="25.0" prefWidth="64.0" style="-fx-background-radius: 300; -fx-background-color: #BF9946;" text="Help ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#bf9946" glyphName="PLANE" layoutX="75.0" layoutY="120.0" size="25" text="" textAlignment="CENTER" wrappingWidth="38.00000327825546" />
+      <JFXButton layoutX="588.0" layoutY="402.0" onAction="#OnLogin" opacity="0.8" prefHeight="49.0" prefWidth="113.0" style="-fx-background-radius: 300; -fx-background-color: #ff9721;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#bf9946" glyphName="PLANE" layoutX="107.0" layoutY="104.0" size="50" text="" textAlignment="CENTER" wrappingWidth="57.00000327825546" />
+      <ImageView fitHeight="118.0" fitWidth="121.0" layoutX="449.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/0404.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="364.0" layoutY="181.0" prefHeight="200.0" prefWidth="350.0" spacing="30.0">
+         <children>
+            <JFXTextField fx:id="idUsername" focusColor="#bf9946" labelFloat="true" prefHeight="30.0" prefWidth="304.0" promptText=" Username" unFocusColor="#bf9946">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </JFXTextField>
+            <JFXPasswordField fx:id="idPassword" focusColor="#bf9946" labelFloat="true" prefHeight="30.0" prefWidth="229.0" promptText="Password" unFocusColor="#bf9946">
+               <effect>
+                  <Reflection />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXComboBox fx:id="comboUser" cache="true" focusColor="#400e2f" labelFloat="true" prefHeight="25.0" prefWidth="146.0" promptText="User Type" style="-jfx-focus-color: #BF9946; -jfx-unfocus-color: #BF9946;" unFocusColor="#400e2f">
+               <effect>
+                  <DropShadow color="#ebbbdb" height="136.4" radius="58.1225" width="98.09">
+                     <input>
+                        <Reflection />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </JFXComboBox>
+         </children>
+         <padding>
+            <Insets left="40.0" right="20.0" top="10.0" />
+         </padding>
+      </VBox>
+      <FontAwesomeIconView fill="#bf9946" glyphName="PLANE" layoutX="36.0" layoutY="143.0" size="20" text="" textAlignment="CENTER" wrappingWidth="38.00000327825546" />
+    </children>
+</AnchorPane>
